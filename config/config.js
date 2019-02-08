@@ -8,7 +8,7 @@ module.exports = {
     use_env_variable: "DATABASE_URL_TESTS"
   },
   production: { 
-    use_env_variable: "CLEARDB_URL"
+    use_env_variable: process.env.CLEARDB_URL
   }
 };
   
