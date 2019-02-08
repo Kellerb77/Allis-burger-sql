@@ -1,0 +1,32 @@
+{
+  "name": "Allis-burger-sql",
+  "version": "1.0.0",
+  "description": "Remove all references to your vanilla MySQL queries and replace them with Sequelize queries.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kellerb77/Allis-burger-sql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kellerb77/Allis-burger-sql/issues"
+  },
+  "homepage": "https://github.com/Kellerb77/Allis-burger-sql#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.1",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.24.3",
+    "sequelize-cli": "^2.4.0"
+  }
+}

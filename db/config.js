@@ -4,7 +4,7 @@ var con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "burger_db"
+  // database: "burger2_db"
 });
 
 // have to run individually
@@ -12,7 +12,7 @@ var con = mysql.createConnection({
 // con.connect(function(err) {
 //   if (err) throw err;
 //   console.log("Connected!");
-//   con.query("CREATE DATABASE burger_db", function (err, result) {
+//   con.query("CREATE DATABASE burger2_db", function (err, result) {
 //     if (err) throw err;
 //     console.log("Database created");
 //   });
@@ -34,19 +34,19 @@ var con = mysql.createConnection({
 //     });
 //   });
 
-con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    var sql = "INSERT INTO Burgers (id, name, devoured, date) VALUES ?";
-    var values = [
-        [1, 'Regular Hamburger', 1, '2016-10-02 10:51:12'],
-        [2, 'Cheese Burger', 1, '2016-10-02 10:52:15'],
-        [3, 'Ultra Bacon Burger', 0, '2016-10-02 10:53:12'],
-        [4, 'Veggie Burger', 0, '2016-10-02 10:54:22'],
-        [5, 'Chicken Club Burger', 0, '2016-10-02 10:55:24']
-    ];
-    con.query(sql, [values], function (err, result) {
-      if (err) throw err;
-      console.log("Number of records inserted: " + result.affectedRows);
-    });
-  });
+// con.connect(function(err) {
+//     if (err) throw err;
+//     console.log("Connected!");
+//     var sql = "INSERT INTO Burgers (id, name, devoured, date) VALUES ?";
+//     var values = [
+//         [1, 'Regular Hamburger', 1, '2016-10-02 10:51:12'],
+//         [2, 'Cheese Burger', 1, '2016-10-02 10:52:15'],
+//         [3, 'Ultra Bacon Burger', 0, '2016-10-02 10:53:12'],
+//         [4, 'Veggie Burger', 0, '2016-10-02 10:54:22'],
+//         [5, 'Chicken Club Burger', 0, '2016-10-02 10:55:24']
+//     ];
+//     con.query(sql, [values], function (err, result) {
+//       if (err) throw err;
+//       console.log("Number of records inserted: " + result.affectedRows);
+//     });
+//   });
